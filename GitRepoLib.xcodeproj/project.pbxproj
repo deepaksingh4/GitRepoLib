@@ -11,6 +11,13 @@
 		0075039228ECAD95001F7E8C /* GitRepoLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0075038728ECAD95001F7E8C /* GitRepoLib.framework */; };
 		0075039728ECAD96001F7E8C /* GitRepoLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0075039628ECAD96001F7E8C /* GitRepoLibTests.swift */; };
 		0075039828ECAD96001F7E8C /* GitRepoLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 0075038A28ECAD95001F7E8C /* GitRepoLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		007503A228ECB23D001F7E8C /* GitRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007503A128ECB23D001F7E8C /* GitRepo.swift */; };
+		007503A428ECB2A2001F7E8C /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007503A328ECB2A2001F7E8C /* RepositoryModel.swift */; };
+		007503A628ECB872001F7E8C /* RepoPullErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007503A528ECB872001F7E8C /* RepoPullErrors.swift */; };
+		007503A828F1F16F001F7E8C /* GitRequestURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007503A728F1F16F001F7E8C /* GitRequestURLBuilder.swift */; };
+		007503AA28F29AB9001F7E8C /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007503A928F29AB9001F7E8C /* SearchRequest.swift */; };
+		007503AC28F2A1B3001F7E8C /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007503AB28F2A1B3001F7E8C /* APIService.swift */; };
+		007503AE28F454A6001F7E8C /* APIServiceMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007503AD28F454A6001F7E8C /* APIServiceMocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		0075038B28ECAD95001F7E8C /* GitRepoLib.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = GitRepoLib.docc; sourceTree = "<group>"; };
 		0075039128ECAD95001F7E8C /* GitRepoLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitRepoLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0075039628ECAD96001F7E8C /* GitRepoLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoLibTests.swift; sourceTree = "<group>"; };
+		007503A128ECB23D001F7E8C /* GitRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepo.swift; sourceTree = "<group>"; };
+		007503A328ECB2A2001F7E8C /* RepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModel.swift; sourceTree = "<group>"; };
+		007503A528ECB872001F7E8C /* RepoPullErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoPullErrors.swift; sourceTree = "<group>"; };
+		007503A728F1F16F001F7E8C /* GitRequestURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRequestURLBuilder.swift; sourceTree = "<group>"; };
+		007503A928F29AB9001F7E8C /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		007503AB28F2A1B3001F7E8C /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		007503AD28F454A6001F7E8C /* APIServiceMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceMocks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +86,13 @@
 			isa = PBXGroup;
 			children = (
 				0075038A28ECAD95001F7E8C /* GitRepoLib.h */,
+				007503A728F1F16F001F7E8C /* GitRequestURLBuilder.swift */,
 				0075038B28ECAD95001F7E8C /* GitRepoLib.docc */,
+				007503A128ECB23D001F7E8C /* GitRepo.swift */,
+				007503A328ECB2A2001F7E8C /* RepositoryModel.swift */,
+				007503A528ECB872001F7E8C /* RepoPullErrors.swift */,
+				007503A928F29AB9001F7E8C /* SearchRequest.swift */,
+				007503AB28F2A1B3001F7E8C /* APIService.swift */,
 			);
 			path = GitRepoLib;
 			sourceTree = "<group>";
@@ -81,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				0075039628ECAD96001F7E8C /* GitRepoLibTests.swift */,
+				007503AD28F454A6001F7E8C /* APIServiceMocks.swift */,
 			);
 			path = GitRepoLibTests;
 			sourceTree = "<group>";
@@ -194,7 +215,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007503A428ECB2A2001F7E8C /* RepositoryModel.swift in Sources */,
+				007503AC28F2A1B3001F7E8C /* APIService.swift in Sources */,
+				007503AA28F29AB9001F7E8C /* SearchRequest.swift in Sources */,
+				007503A228ECB23D001F7E8C /* GitRepo.swift in Sources */,
 				0075038C28ECAD95001F7E8C /* GitRepoLib.docc in Sources */,
+				007503A628ECB872001F7E8C /* RepoPullErrors.swift in Sources */,
+				007503A828F1F16F001F7E8C /* GitRequestURLBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007503AE28F454A6001F7E8C /* APIServiceMocks.swift in Sources */,
 				0075039728ECAD96001F7E8C /* GitRepoLibTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +387,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dexter.GitRepoLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,6 +418,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dexter.GitRepoLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -396,6 +430,7 @@
 		0075039F28ECAD96001F7E8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4EK8A9V52S;
@@ -412,6 +447,7 @@
 		007503A028ECAD96001F7E8C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4EK8A9V52S;
